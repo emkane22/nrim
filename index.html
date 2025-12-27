@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>New Right Influence Mapping – Cultural Infrastructure</title>
+
+  <!-- Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="page">
+    <div class="topbar">
+        <div>
+            <div class="header">
+                <h1>NRIM: Cultural Infrastructure of the American New Right</h1>
+                <div class="header-actions">
+                  <button id="map-focus-btn" class="about-btn">Focus</button>
+                  <a href="about.html" class="about-btn">About</a>
+                </div>
+              </div>
+              
+              <p class="lede">
+                A prototype map of how cultural actors, organisations, and platforms convert
+                attention into durable political capacity. Click a node to explore its role in the ecosystem.
+              </p>
+              
+        </div>
+      
+    
+      </div>
+      
+
+      <div class="layout">
+        <div id="graph"></div>
+      
+        <div class="rightcol">
+        
+      
+          <aside id="panel" class="panel">
+            <div class="panel-inner">
+              <div class="panel-header">
+                <div>
+                  <h2 id="panel-title">Click a node</h2>
+                  <p id="panel-meta" class="muted"></p>
+                </div>
+                <div class="panel-actions">
+                  <button id="panel-close-btn" class="panel-btn">Close</button>
+                </div>
+              </div>
+              
+              <section class="panel-section">
+                <h3>Overview</h3>
+                <div id="panel-overview"></div>
+              </section>
+              
+              <section class="panel-section">
+                <h3>Connections</h3>
+                <div id="panel-connections"></div>
+              </section>
+              
+              <section class="panel-section">
+                <h3>Tags</h3>
+                <div id="panel-tags"></div>
+              </section>
+              
+              <section class="panel-section">
+                <h3>Sources</h3>
+                <div id="panel-sources"></div>
+              </section>
+            </div>
+          </aside>
+        </div>
+      </div>
+  </div>
+
+  <!-- Prototype notice modal -->
+  <div id="prototypeModal" class="modal-overlay" role="dialog" aria-modal="true">
+    <div class="modal">
+      <h2>Prototype! Work in Progress</h2>
+
+      <p>
+        This project is an early prototype for exploring political narratives and actor networks.
+        Features and data are incomplete, and you may encounter bugs.
+      </p>
+
+      <p>
+        Progress is currently limited and therefore slow — please have patience.
+      </p>
+
+      <h3>How to use</h3>
+      <ul>
+        <li>Click on a node to see how the actor is related to others.</li>
+      </ul>
+
+      <h3>Known issues</h3>
+      <ul>
+        <li>Profile images may not load.</li>
+        <li>Titles on the nodes are currently buggy.</li>
+      </ul>
+
+      <p class="muted">Further analysis coming soon.</p>
+
+      <div class="modal-actions">
+        <button id="protoContinue" class="btn-primary">Continue</button>
+        <button id="protoDismiss" class="btn-secondary">Don't show again</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Prototype badge (click to reopen prototype notice) -->
+  <button
+    id="prototypeBadge"
+    class="prototype-badge"
+    type="button"
+    aria-label="Open prototype notice"
+    title="Click to view prototype notice"
+  >
+    Prototype · WIP
+  </button>
+
+  <!-- Scripts (D3 first, then your code) -->
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
