@@ -513,7 +513,7 @@ const nodes = [
   nodes.forEach((node) => {
     node.category = node.category || clusterToCategory[node.cluster] || "org/media";
   });
-  // NEED TO FIX HERE 
+  
   const categoryZones = {
     "national conservatism": { x: 0.20, y: 0.25 },
     "post-liberalism": { x: 0.45, y: 0.20 },
@@ -524,12 +524,12 @@ const nodes = [
   };
   
   const focusCategoryZones = {
-    natcon: { x: 0.12, y: 0.32 },
-    postlib: { x: 0.32, y: 0.32 },
+    "national conservatism": { x: 0.12, y: 0.32 },
+    "post-liberalism": { x: 0.32, y: 0.32 },
     "org/media": { x: 0.52, y: 0.32 },
-    tech_accel: { x: 0.72, y: 0.32 },
-    crypto: { x: 0.88, y: 0.32 },
-    platform: { x: 0.52, y: 0.72 }
+    "tech accelerationism": { x: 0.72, y: 0.32 },
+    "crypto-sovereignty": { x: 0.88, y: 0.32 },
+    "platform": { x: 0.52, y: 0.72 }
   };
   
   function updateSimulationDimensions() {
