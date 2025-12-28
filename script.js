@@ -1,4 +1,16 @@
 // ----- DATA -----
+// natcon/ media/ people cluster 
+// people: Nick Fuentes, Ben Shapiro, Charlie Kirk, Erika Kirk
+// organisations: Turning Point USA, The Daily Wire, The Federalist, Pirate Wires
+// platforms: X, Rumble, Pirate Wires
+// ideas: Accelerationism, Post-liberalism, National Conservatism, Crypto-sovereignty
+// movements: America First
+// to add: Christopher Rufo, Michael Solana (Pirate Wires), The Heritage Foundation, The Claremont Institute, New College Florida - Ron DeSantis? 
+// to add: crypto/ tech: Elon Musk 
+// to add: Richard Hanania, Curtis Yarvin, Milo Yiannopoulos, Nick Land
+// Analysis: US-UK cultural osmosis 
+// Analysis: post-liberal merge with Catholocism? JD Vance 
+
 const nodes = [
     {
       id: "Nick Fuentes",
@@ -9,9 +21,8 @@ const nodes = [
       function:
         "Operates at the outer edge: tests boundaries, escalates rhetoric, and supplies a 'hard' ideological pole that others react to.",
       audience:
-        "Online, younger, highly politicised audiences; communities oriented around identity, grievance, and transgression.",
-      why:
-        "Edge actors can shift the centre by moving perceived boundaries and shaping downstream incentives.",
+        "Online, younger, highly politicised audiences; communities oriented around identity, grievance, and transgression. Fanbase named Groypers.", 
+       why: "Edge actors can shift the centre by moving perceived boundaries and shaping downstream incentives.",
       img: undefined // Optional: "assets/nick-fuentes.png" or "nick-fuentes.png"
     },
     {
@@ -33,7 +44,7 @@ const nodes = [
       type: "person",
       cluster: "youth",
       tier: 2,
-      role: "Youth mobilisation broker",
+      role: "Youth mobilisation leader/ influencer. Died September 2025. Founder of Turning Point USA.", 
       function:
         "Builds organisational infrastructure that converts attention into recruitment and political capacity.",
       audience: "University students and young conservatives.",
@@ -42,8 +53,20 @@ const nodes = [
 
     },
     {
+      id: "Erika Kirk",
+      type: "person", 
+      cluster: "youth",
+      tier: 2, 
+      role: "CEO of Turning Point USA. Wife of Charlie Kirk.",
+      function: 
+        "Leads organisational operations and fundraising. Manages day-to-day operations of Turning Point USA.",
+      audience: "Young conservatives and political activists.",
+      why: "Key figure in the conservative youth movement.",
+      img: undefined
+    },
+    {
       id: "Turning Point USA",
-      type: "org",
+      type: "organisation",
       cluster: "youth",
       tier: 2,
       role: "Youth political organisation",
@@ -54,7 +77,7 @@ const nodes = [
     },
     {
       id: "The Daily Wire",
-      type: "org",
+      type: "organisation",
       cluster: "media",
       tier: 2,
       role: "Media company",
@@ -95,7 +118,30 @@ const nodes = [
       role: "Alternative video platform",
       function: "Provides hosting and monetisation for deplatformed figures.",
       audience: "Politically radicalised online audiences.",
-      why: "Enables persistence after moderation pressure.",
+      why: "Enables persistence of extremist content after mainstream moderation pressure.",
+      img: undefined
+    },
+    {
+      id: "Pirate Wires",
+      type: "organisation",
+      cluster: "media",
+      tier: 2,
+      role: "media company", 
+      function: 
+      "Distributes conservative rhetoric at scale. Amplifies conservative conspiracy theories and narratives. Content is part news journalism and part satire", 
+      audience: "Conservative audiences and political elites.",
+      why: "Key platform for conservative content and narrative amplification. Claims to be popular amongst young White House staffers. Demonstrates how conservative content can frame itself as ironic satire, while still being taken seriously by its audience.",
+      img: undefined
+    },
+    {
+      id: "The Federalist",
+      type: "organisation",
+      cluster: "media",
+      tier: 2,
+      role: "Media company",
+      function: "Publishes conservative commentary and analysis.",
+      audience: "Conservative audiences and political elites.",
+      why: "Key platform for conservative commentary and analysis. Demonstrates how conservative thinkers seek to frame themselves as serious intellectuals, to gain institutional legitimacy.",
       img: undefined
     },
   
@@ -103,7 +149,7 @@ const nodes = [
     {
       id: "Accelerationism",
       type: "idea",
-      cluster: "tech_accel",
+      cluster: "tech accelerationism",
       tier: 1,
       role: "Ideological framework",
       function:
@@ -116,7 +162,7 @@ const nodes = [
     {
       id: "Marc Andreessen",
       type: "person",
-      cluster: "tech_accel",
+      cluster: "tech accelerationism",
       tier: 1,
       role: "Tech investor and accelerationist thinker",
       function:
@@ -129,7 +175,7 @@ const nodes = [
     {
       id: "a16z",
       type: "org",
-      cluster: "tech_accel",
+      cluster: "tech accelerationism",
       tier: 1,
       role: "Venture capital firm",
       function:
@@ -141,7 +187,7 @@ const nodes = [
     {
       id: "Peter Thiel",
       type: "person",
-      cluster: "tech_accel",
+      cluster: "tech accelerationism",
       tier: 1,
       role: "Tech entrepreneur and investor",
       function:
@@ -153,7 +199,7 @@ const nodes = [
     {
       id: "Founders Fund",
       type: "org",
-      cluster: "tech_accel",
+      cluster: "tech accelerationism",
       tier: 2,
       role: "Venture capital firm",
       function:
@@ -165,7 +211,7 @@ const nodes = [
     {
       id: "Palantir",
       type: "org",
-      cluster: "tech_accel",
+      cluster: "tech accelerationism",
       tier: 2,
       role: "Data analytics company",
       function:
@@ -177,7 +223,7 @@ const nodes = [
     {
       id: "Anduril",
       type: "org",
-      cluster: "tech_accel",
+      cluster: "tech accelerationism",
       tier: 2,
       role: "Defense technology company",
       function:
@@ -191,7 +237,7 @@ const nodes = [
     {
       id: "Post-liberalism",
       type: "idea",
-      cluster: "post_liberal",
+      cluster: "post-liberalism",
       tier: 1,
       role: "Ideological framework",
       function:
@@ -204,7 +250,7 @@ const nodes = [
     {
       id: "Patrick Deneen",
       type: "person",
-      cluster: "post_liberal",
+      cluster: "post-liberalism",
       tier: 1,
       role: "Political theorist and academic",
       function:
@@ -216,7 +262,7 @@ const nodes = [
     {
       id: "Sohrab Ahmari",
       type: "person",
-      cluster: "post_liberal",
+      cluster: "post-liberalism",
       tier: 1,
       role: "Editor and intellectual",
       function:
@@ -229,7 +275,7 @@ const nodes = [
     {
       id: "The American Conservative",
       type: "org",
-      cluster: "post_liberal",
+      cluster: "post-liberalism",
       tier: 2,
       role: "Magazine and media outlet",
       function: "Publishes post-liberal conservative commentary and analysis.",
@@ -241,7 +287,7 @@ const nodes = [
     {
       id: "First Things",
       type: "org",
-      cluster: "post_liberal",
+      cluster: "post-liberalism",
       tier: 2,
       role: "Religious and cultural magazine",
       function:
@@ -256,7 +302,7 @@ const nodes = [
     {
       id: "National Conservatism",
       type: "idea",
-      cluster: "natcon",
+      cluster: "national conservatism",
       tier: 1,
       role: "Ideological framework",
       function:
@@ -270,7 +316,7 @@ const nodes = [
     {
       id: "NatCon Conference",
       type: "org",
-      cluster: "natcon",
+      cluster: "national conservatism",
       tier: 1,
       role: "Conference and event organization",
       function: "Organizes major gathering point for national conservative movement.",
@@ -282,7 +328,7 @@ const nodes = [
     {
       id: "Claremont Institute",
       type: "org",
-      cluster: "natcon",
+      cluster: "national conservatism",
       tier: 2,
       role: "Think tank",
       function:
@@ -294,7 +340,7 @@ const nodes = [
     {
       id: "American Greatness",
       type: "org",
-      cluster: "natcon",
+      cluster: "national conservatism",
       tier: 2,
       role: "Media outlet",
       function: "Publishes national conservative commentary and analysis.",
@@ -307,7 +353,7 @@ const nodes = [
     {
       id: "Crypto-sovereignty",
       type: "idea",
-      cluster: "crypto_sov",
+      cluster: "crypto-sovereignty",
       tier: 1,
       role: "Ideological framework",
       function:
@@ -321,7 +367,7 @@ const nodes = [
     {
       id: "Coinbase",
       type: "org",
-      cluster: "crypto_sov",
+      cluster: "crypto-sovereignty",
       tier: 1,
       role: "Cryptocurrency exchange",
       function:
@@ -334,7 +380,7 @@ const nodes = [
     {
       id: "a16z crypto",
       type: "org",
-      cluster: "crypto_sov",
+      cluster: "crypto-sovereignty",
       tier: 1,
       role: "Crypto investment division",
       function:
@@ -353,6 +399,8 @@ const nodes = [
     { source: "The Daily Wire", target: "X", kind: "appears_on" },
     { source: "Charlie Kirk", target: "X", kind: "appears_on" },
     { source: "Nick Fuentes", target: "Rumble", kind: "hosts" },
+    { source: "Erika Kirk", target: "Charlie Kirk", kind: "married"}, 
+    { source: "Erika Kirk", target: "Turning Point USA", kind: "leads" },
   
     { source: "Marc Andreessen", target: "a16z", kind: "leads" },
     { source: "Marc Andreessen", target: "Accelerationism", kind: "influences" },
@@ -451,10 +499,10 @@ const nodes = [
   
   // ----- CATEGORY FIELD -----
   const clusterToCategory = {
-    natcon: "natcon",
-    post_liberal: "postlib",
-    tech_accel: "tech_accel",
-    crypto_sov: "crypto",
+    natcon: "national conservatism",
+    post_liberal: "post-liberalism",
+    tech_accel: "tech accelerationism",
+    crypto_sov: "crypto-sovereignty",
     platform: "platform",
     media: "org/media",
     youth: "org/media"
