@@ -531,6 +531,10 @@ const nodes = [
     "crypto-sovereignty": { x: 0.88, y: 0.32 },
     "platform": { x: 0.52, y: 0.72 }
   };
+  console.log("zone keys", Object.keys(categoryZones));
+  console.log("focus zone keys", Object.keys(focusCategoryZones));
+  console.log("categories", [...new Set(nodes.map(n => n.category))]);
+
   
   function updateSimulationDimensions() {
     const dims = getDimensions();
