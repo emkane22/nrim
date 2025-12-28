@@ -428,7 +428,7 @@ const nodes = [
     { source: "Nick Fuentes", target: "National Conservatism", kind: "influences" },
     { source: "America First", target: "National Conservatism", kind: "affiliated" },
     { source: "Turning Point USA", target: "National Conservatism", kind: "affiliated" },
-    
+
   
     { source: "Coinbase", target: "Crypto-sovereignty", kind: "affiliated" },
     { source: "a16z crypto", target: "Crypto-sovereignty", kind: "funds" }
@@ -513,13 +513,13 @@ const nodes = [
   nodes.forEach((node) => {
     node.category = node.category || clusterToCategory[node.cluster] || "org/media";
   });
-  
+  // NEED TO FIX HERE 
   const categoryZones = {
-    natcon: { x: 0.20, y: 0.25 },
-    postlib: { x: 0.45, y: 0.20 },
-    tech_accel: { x: 0.75, y: 0.25 },
-    crypto: { x: 0.75, y: 0.70 },
-    platform: { x: 0.20, y: 0.70 },
+    "national conservatism": { x: 0.20, y: 0.25 },
+    "post-liberalism": { x: 0.45, y: 0.20 },
+    "tech accelerationism": { x: 0.75, y: 0.25 },
+    "crypto-sovereignty": { x: 0.75, y: 0.70 },
+    "platform": { x: 0.20, y: 0.70 },
     "org/media": { x: 0.45, y: 0.75 }
   };
   
