@@ -427,6 +427,8 @@ const nodes = [
     { source: "American Greatness", target: "National Conservatism", kind: "amplifies" },
     { source: "Nick Fuentes", target: "National Conservatism", kind: "influences" },
     { source: "America First", target: "National Conservatism", kind: "affiliated" },
+    { source: "Turning Point USA", target: "National Conservatism", kind: "affiliated" },
+    
   
     { source: "Coinbase", target: "Crypto-sovereignty", kind: "affiliated" },
     { source: "a16z crypto", target: "Crypto-sovereignty", kind: "funds" }
